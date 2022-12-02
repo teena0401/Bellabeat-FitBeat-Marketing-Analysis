@@ -34,7 +34,7 @@ Participants weren’t asked to wear/use their FitBits for the entirety of the 3
 
 ### Data Visualization 
 
-1. Sleep [ Average Hours of Sleep per day of week ] 
+Sleep [ Average Hours of Sleep per day of week ] 
 2. Total Minutes of Sleep Vs Sendentary Minutes x4 
 3. Total Minutes of Sleep vc Total Sleep 
 4. How many minutes on average it takes to fall asleep by day of week 
@@ -54,5 +54,23 @@ Activity
 
 
 ### Conclusion 
+- Sedentary make up a significant portion, 81% of users daily active minutes. Users spend on avg 12 hours a day in sedentary minutes, 4 hours lightly active, and only half-hour in fairly+very active!
+We see the most change on Saturday: users take more steps, burn more calories, and spend less time sedentary. Sunday is the most "lazy" day for users.
+54% of the users who recorded their sleep data spent 55 minutes awake in bed before falling asleep.
+Users takes the most steps from 5 PM to 7 PM Users who are sedentary take minimal steps and burn 1500 to 2500 calories compared to users who are more active, take more steps, but still burn similar calories.
+
+In a period of a month (April to May 2016), there were 83% of users in Vigorous category when it came to how frequently they wore their tracker.
+Most of the users were not active, as sedentary minutes show the highest value.
+73,5% users were not reaching 10.000 steps a day.
+Wednesday and Sunday made up to the most active day.
+Higher steps spent means that higher calories was burnt.
+The highest average time in bed within a week falls on Tuesday.
+There is no significant correlation between steps, calories, and total minutes asleep.
+The more intense users worked out, the better for them to reach their weight goal.
+
 #### Findings 
 #### Recommendations 
+- Obtain more data for an accurate analysis, encouraging users to use a wifi-connected scale instead of manual weight entries.
+🚲 Educational healthy style campaign encourages users to have short active exercises during the week, longer during the weekends, especially on Sunday where we see the lowest steps and most sedentary minutes.
+🎁 Educational healthy style campaign can pair with a point-award incentive system. Users completing the whole week's exercise will receive Bellabeat points on products/memberships.
+🏃‍♂️ The product, such as Leaf wellness tracker, can beat or vibrate after a prolonged period of sedentary minutes, signaling the user it's time to get active! Similarly, it can also remind the user it's time to sleep after sensing a prolonged awake time in bed.
