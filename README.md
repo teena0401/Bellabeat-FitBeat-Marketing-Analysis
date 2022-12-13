@@ -55,16 +55,17 @@ Activity
 
 ### Conclusion 
 - Sedentary make up a significant portion, 81% of users daily active minutes. Users spend on avg 12 hours a day in sedentary minutes, 4 hours lightly active, and only half-hour in fairly+very active!
-We see the most change on Saturday: users take more steps, burn more calories, and spend less time sedentary. Sunday is the most "lazy" day for users.
+- We see the most change on Saturday: users take more steps, burn more calories, and spend less time sedentary. Sunday is the most "lazy" day for users.
 54% of the users who recorded their sleep data spent 55 minutes awake in bed before falling asleep.
-Users takes the most steps from 5 PM to 7 PM Users who are sedentary take minimal steps and burn 1500 to 2500 calories compared to users who are more active, take more steps, but still burn similar calories.
+- Users takes the most steps from 5 PM to 7 PM Users who are sedentary take minimal steps and burn 1500 to 2500 calories compared to users who are more active, take more steps, but still burn similar calories.
 
-In a period of a month (April to May 2016), there were 83% of users in Vigorous category when it came to how frequently they wore their tracker.
+- In a period of a month (April to May 2016), there were 83% of users in Vigorous category when it came to how frequently they wore their tracker.
 Most of the users were not active, as sedentary minutes show the highest value.
 73,5% users were not reaching 10.000 steps a day.
 Wednesday and Sunday made up to the most active day.
-Higher steps spent means that higher calories was burnt.
+- Higher steps spent means that higher calories was burnt.
 The highest average time in bed within a week falls on Tuesday.
+
 There is no significant correlation between steps, calories, and total minutes asleep.
 The more intense users worked out, the better for them to reach their weight goal.
 
