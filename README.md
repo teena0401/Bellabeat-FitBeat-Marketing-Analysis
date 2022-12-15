@@ -69,7 +69,14 @@ The highest average time in bed within a week falls on Tuesday.
 There is no significant correlation between steps, calories, and total minutes asleep.
 The more intense users worked out, the better for them to reach their weight goal.
 
-#### Findings 
+#### Findings
+
+-	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month. 
+-	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
+-	Evening period, 5pm to 7pm, has the highest average steps count throughout a day followed by afternoon to noon period, 12pm to 2pm, which has the second highest count. 
+-	Users are less likely to wear during sleep, where only 10 users, out of 24 users, have worn more than 15 nights. 
+-	There is a positive correlation between activity level and calories burned. The more activity you are, the more calories you burn   
+
 #### Recommendations 
 - Obtain more data for an accurate analysis, encouraging users to use a wifi-connected scale instead of manual weight entries.
 🚲 Educational healthy style campaign encourages users to have short active exercises during the week, longer during the weekends, especially on Sunday where we see the lowest steps and most sedentary minutes.
