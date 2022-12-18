@@ -71,12 +71,6 @@ The more intense users worked out, the better for them to reach their weight goa
 
 #### Findings
 
--	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month. 
--	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
--	Evening period, 5pm to 7pm, has the highest average steps count throughout a day followed by afternoon to noon period, 12pm to 2pm, which has the second highest count. 
--	Users are less likely to wear during sleep, where only 10 users, out of 24 users, have worn more than 15 nights. 
--	There is a positive correlation between activity level and calories burned. The more activity you are, the more calories you burn
-
 -	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month.
 -	90% users wear for more than 21 days in a month. 
 -	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
@@ -86,7 +80,15 @@ The more intense users worked out, the better for them to reach their weight goa
 
 
 #### Recommendations 
-- Obtain more data for an accurate analysis, encouraging users to use a wifi-connected scale instead of manual weight entries.
-🚲 Educational healthy style campaign encourages users to have short active exercises during the week, longer during the weekends, especially on Sunday where we see the lowest steps and most sedentary minutes.
-🎁 Educational healthy style campaign can pair with a point-award incentive system. Users completing the whole week's exercise will receive Bellabeat points on products/memberships.
-🏃‍♂️ The product, such as Leaf wellness tracker, can beat or vibrate after a prolonged period of sedentary minutes, signaling the user it's time to get active! Similarly, it can also remind the user it's time to sleep after sensing a prolonged awake time in bed.
+
+The insufficient data has resulted less credibility in our finding. 
+Based on the findings, I recommend adding notification system to the products,  promoting point-award incentive system and marketing campaign for white-collar group. 
+
+1. Add Notification System to products/apps. For users who have not reached the daily minimum step count or been on sedentary activities continually, products/apps will notify either through reminder notification or vibration from smart products. 
+
+2. Promote point-award incentive system. Based on our analysis, we found that 90% users wear fitbit regularly. Users who completing bellabeat exercise weekly challenge can redeem points on products/memberships. Those points can use on exchanging/discount on bellabeat new products. 
+
+3. Marketing Campaign pinpointing the perks of having Health Assitant and targeting white-collar worker. 
+Based on our findings, we observed the users in our study, on average spend 12 hours on sedentary activity and they are most active in evening and afternoon. Plus, 90% users wear more than 21 days in a month. This group of people tend to lose track of time due to their job nature and less-physical consuming activity, so the marketing content could cater and tailor for them. 
+
+
