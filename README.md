@@ -150,9 +150,27 @@ UPDATE bellabeat.sleepday_merged
 SET SleepDatetime = cast(str_to_date(SleepDay,"%m/%e/%Y %r")as datetime); 
 ```
 
-
 ## 3.3 Comparing Datasets 
-## 3.4 Checking Start-End Date and Id 
+We observed that dailyActivity_merged dataset has contained identical information from other 2 datasets (dailyCalories, dailySteps). To ensure the accuracy between datasets, we use inner join function to examine the quality of dailyActivity. 
+
+```sql
+SELECT
+A.Id, A.ActivityDate, A.TotalSteps, A.TotalDistance, A.TrackerDistance,
+A.LoggedActivitiesDistance, A.VeryActiveDistance,  A.ModeratelyActiveDistance,  
+A.LightActiveDistance, A.SedentaryActiveDistance, A.VeryActiveMinutes, A.FairlyActiveMinutes, 
+A.LightlyActiveMinutes, A.SedentaryMinutes, A.Calories
+FROM bellabeat.dailyactivity_merged A 
+INNER JOIN bellabeat.dailycalories_merged C
+ON A.Id = C.Id and A.ActivityDate = C.ActivityDay and A.Calories = C.Calories
+INNER JOIN bellabeat.dailysteps_merged S 
+ON A.Id = S.Id  and A.ActivityDate = S.ActivityDay 
+and A.TotalSteps = S.StepTotal; 
+```
+After running the inner join query, we can see it return 940 rows, which is same as other dataset. 
+<img src="https://imgur.com/uhrA0Bc.png">
+
+## 3.4 Checking Start-End Date and Id
+
 ## 3.5 Cleaning Data 
 ## 3.5.1 Find Duplicates 
 ## 3.5.2 Find Unsuitable Data 
