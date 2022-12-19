@@ -122,19 +122,19 @@ The date format in cvs file can't be read by mysql, so after importing csv file 
 Add a new column and insert the converted old column value into new column.  
 
 Alter table bellabeat.dailyactivity
-add Time_and_date VARCHAR(50) ;
+add Activity_Date VARCHAR(50) ;
 UPDATE bellabeat.dailyactivity
-SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
+SET Activity_Date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
 
 Alter table bellabeat.dailyCalories
-add Time_and_date VARCHAR(50) ;
+add Activity_Date VARCHAR(50) ;
 UPDATE bellabeat.dailyCalories
-SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
+SET Activity_Date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
 
 Alter table bellabeat.dailySteps
-add Time_and_date VARCHAR(50) ;
+add Activity_Date VARCHAR(50) ;
 UPDATE bellabeat.dailySteps
-SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
+SET Activity_Date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
 
 <img src="https://imgur.com/undefined.png">
 
@@ -169,9 +169,38 @@ and A.TotalSteps = S.StepTotal;
 After running the inner join query, we can see it return 940 rows, which is same as other dataset. 
 <img src="https://imgur.com/uhrA0Bc.png">
 
-## 3.4 Checking Start-End Date and Id
+## 3.4 Checking Start-End Date and Length of Id
+```sql
+-- Find the start and end date of each activity-- 
+SELECT MIN(Activity_Date) as start_date, MAX(Activity_Date) as end_date
+FROM bellabeat.dailyActivity_merged;
+-- start date : 2016-04-12 and end date = 2016-05-12
+
+SELECT MIN(Activity_Hour ) as start_date, MAX(Activity_Hour) as end_date
+FROM bellabeat.hourlysteps_merged; 
+-- start date : 4/12/2016 and end date = 5/9/2016-- 
+
+SELECT MIN(SleepDatetime) as start_date, MAX(SleepDatetime) as end_date
+FROM bellabeat.sleepday_merged;
+-- start date : 4/12/2016 and end date = 5/9/2016
+
+-- Check all ids have the same length-- 
+SELECT Id
+FROM bellabeat.dailyActivity_merged
+WHERE Length(Id)> 10 OR Length(Id )< 10;
+-- No values returned; all IDs in Daily Activity have 10 characters
+SELECT Id
+FROM bellabeat.sleepday_merged
+WHERE Length(Id) > 10 OR Length(Id )<10;
+-- No values returned; all IDs in Sleep Day have 10 characters
+SELECT Id
+FROM bellabeat.hourlysteps_merged
+WHERE Length(Id)>10 OR Length(Id )<10;
+-- No values returned; all IDs in Weight log have 10 characters
+```
 
 ## 3.5 Cleaning Data 
+
 ## 3.5.1 Find Duplicates 
 ## 3.5.2 Find Unsuitable Data 
 
