@@ -51,8 +51,77 @@ Participants weren’t asked to wear/use their FitBits for the entirety of the 3
 ## Phase 3: Process
 To begin processing the data, I used SQL in BigQuery as one of the data analytics tools, to import the dataset, do the process of cleaning and organizing. The cleaning process included adjusting data type formats, removing duplicates and null data. I extracted the clean data to new csv and stored it. I documented the whole process of cleaning.
 
+<img src="https://imgur.com/a/rJmoft9.png">
+
 ## 3.1 Importing Datasets
+``` sql 
+/*dailyActivity_merged*/ 
+CREATE TABLE dailyActivity_merged (
+Id varchar(50), ActivityDate DATE, TotalSteps INT, TotalDistance DOUBLE, TrackerDistance DOUBLE, LoggedActivitiesDistance INT, 
+VeryActiveDistance DOUBLE, ModeratelyActiveDistance DOUBLE, LightActiveDistance  DOUBLE, SedentaryActiveDistance INT,VeryActiveMinutes INT, 
+FairlyActiveMinutes INT, LightlyActiveMinutes INT, SedentaryMinutes INT, Calories INT); 
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\bellabeat\\dailyActivity_merged.csv'
+INTO TABLE dailyActivity_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY ""
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS; 
+
+/*dailyCalories_merged*/ 
+CREATE TABLE dailyCalories_merged(
+Id VARCHAR(50), ActivityDay DATE, Calories INT,  time_and_date DATE);
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\bellabeat\\dailyCalories_merged.csv'
+INTO TABLE dailyCalories_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY ""
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS; 
+
+/*dailySteps_merged*/ 
+CREATE TABLE dailySteps_merged (
+Id VARCHAR(50), ActivityDay DATE, StepTotal INT);
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\bellabeat\\dailySteps_merged.csv'
+INTO TABLE dailySteps_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY ""
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS; 
+
+/*hourlysteps_merged*/
+CREATE TABLE hourlySteps_merged (
+Id VARCHAR(50), ActivityHour VARHCAR(50), StepTotal INT); 
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\bellabeat\\hourlySteps_merged.csv'
+INTO TABLE hourlySteps_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY ""
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS; 
+
+/*SleepDay_merged*/ 
+CREATE TABLE SleepDay_merged (
+Id VARCHAR(50), SleepDay VARCHAR(50), TotalSleepRecords INT, TotalMinutesAsleep INT, TotalTimeInBed INT);
+
+LOAD DATA INFILE ''C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\bellabeat\\sleepDay_merged.csv'
+INTO TABLE SleepDay_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY ""
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS; 
+```
+
 ## 3.2 Converting DataType 
+<img src="https://imgur.com/Fudwb5C.png"> 
+The date format in cvs file can't be read by mysql, so after importing csv file to database, the dateformat must be converted from varchar(50) to dateformat. 
+
+``` sql 
+
+
+
+
 ## 3.3 Comparing Datasets 
 ## 3.4 Checking Start-End Date and Id 
 ## 3.5 Cleaning Data 
