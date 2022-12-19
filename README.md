@@ -118,8 +118,37 @@ IGNORE 1 ROWS;
 The date format in cvs file can't be read by mysql, so after importing csv file to database, the dateformat must be converted from varchar(50) to dateformat. 
 
 ``` sql 
+- Converting Data Type-
+Add a new column and insert the converted old column value into new column.  
 
+Alter table bellabeat.dailyactivity
+add Time_and_date VARCHAR(50) ;
+UPDATE bellabeat.dailyactivity
+SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
 
+Alter table bellabeat.dailyCalories
+add Time_and_date VARCHAR(50) ;
+UPDATE bellabeat.dailyCalories
+SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
+
+Alter table bellabeat.dailySteps
+add Time_and_date VARCHAR(50) ;
+UPDATE bellabeat.dailySteps
+SET time_and_date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date); 
+
+<img src="https://imgur.com/undefined.png">
+
+```sql 
+Alter table bellabeat.hourlysteps_merged
+add Activity_Hour VARCHAR(50) ;
+UPDATE bellabeat.hourlysteps_merged
+SET Activity_Hour = cast(str_to_date(ActivityHour,"%m/%e/%Y %r")as datetime); 
+
+Alter table bellabeat.sleepday_merged
+add SleepDatetime VARCHAR(50) ;
+UPDATE bellabeat.sleepday_merged
+SET SleepDatetime = cast(str_to_date(SleepDay,"%m/%e/%Y %r")as datetime); 
+```
 
 
 ## 3.3 Comparing Datasets 
