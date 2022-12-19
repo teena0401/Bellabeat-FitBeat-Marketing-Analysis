@@ -200,8 +200,28 @@ WHERE Length(Id)>10 OR Length(Id )<10;
 ```
 
 ## 3.5 Cleaning Data 
-
 ## 3.5.1 Find Duplicates 
+
+```sql
+SELECT Id, ActivityDate, Count(*) as num_of_ids
+FROM bellabeat.dailyactivity_merged
+GROUP BY Id, ActivityDate
+Having num_of_ids >1 ;
+-- no data to display / no duplicates in daily_activity
+
+SELECT Id, Activity_Hour, Count(*) as num_of_ids
+FROM bellabeat.hourlysteps_merged
+GROUP BY Id, Activity_Hour
+Having num_of_ids >1; 
+-- no data to display / no duplicates in hourlysteps
+
+SELECT Id, SleepDay, Count(*) as num_of_ids
+FROM bellabeat.sleepday_merged
+GROUP BY Id, SleepDay
+Having num_of_ids >1;
+-- There are 3 duplicate rows returned
+``` 
+
 ## 3.5.2 Find Unsuitable Data 
 
 ## Phase 4: Analyze
