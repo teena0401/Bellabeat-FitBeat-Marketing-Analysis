@@ -54,6 +54,7 @@ To begin processing the data, I used SQL in BigQuery as one of the data analytic
 <img src="https://imgur.com/a/rJmoft9.png">
 
 ## 3.1 Importing Datasets
+
 ``` sql 
 /*dailyActivity_merged*/ 
 CREATE TABLE dailyActivity_merged (
@@ -114,6 +115,7 @@ IGNORE 1 ROWS;
 ```
 
 ## 3.2 Converting DataType 
+
 <img src="https://imgur.com/Fudwb5C.png"> 
 The date format in cvs file can't be read by mysql, so after importing csv file to database, the dateformat must be converted from varchar(50) to dateformat. 
 
@@ -166,6 +168,7 @@ INNER JOIN bellabeat.dailysteps_merged S
 ON A.Id = S.Id  and A.ActivityDate = S.ActivityDay 
 and A.TotalSteps = S.StepTotal; 
 ```
+
 After running the inner join query, we can see it return 940 rows, which is same as other dataset. 
 <img src="https://imgur.com/uhrA0Bc.png">
 
@@ -227,10 +230,11 @@ Having num_of_ids >1;
 ## Phase 4: Analyze
 After cleaning the data, 3-clean dataset will be used to do the analysis process. In this process, I organized and formatted the data, performed some calculations, and identified trends as well as relationships between each variable.
 
-## 4.1 User Type Distribution by Tracker-Wear 
-## 4.2 Look Deep into Activity 
-## 4.2.1 Average activity miniutes by day of week 
-## 4.2.2 User Type Distribution by total steps 
+## 4.1 Overview of User Activity Class 
+## 4.2 Daily Activity Behavior of a Smart Device User 
+## 4.3 Day of Week Activity Behavior of Smart Device Users 
+## 4.4 Number of Sleep Night being tracked in a month
+## 4.5 User Type Distribution
 
 ### Data Visualization 
 
