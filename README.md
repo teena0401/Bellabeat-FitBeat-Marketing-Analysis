@@ -260,22 +260,22 @@ WHERE Id is null;
 After cleaning the data, 3-clean dataset will be used to do the analysis process. In this process, I organized and formatted the data, performed some calculations, and identified trends as well as relationships between each variable.
 
 ## 4.1 Overview of User Activity Class 
-<img scr ="https://imgur.com/lO4ZLZD.png">
+<img scr="https://imgur.com/lO4ZLZD.png">
 
 ## 4.2 Daily Activity Behavior of a Smart Device User 
-<img scr ="https://imgur.com/wZJ3Bsb.png">
+<img scr="https://imgur.com/wZJ3Bsb.png">
 
 ## 4.3 Day of Week Activity Behavior of Smart Device Users 
-<img scr = "https://imgur.com/HOJsZOH.png"> 
+<img src="https://imgur.com/HOJsZOH.png"> 
 
 ## 4.4 Number of Sleep Night being tracked in a month
-<img scr = "https://imgur.com/t99ZzuO.png"> 
+<img src = "https://imgur.com/t99ZzuO.png"> 
 
 ## 4.5 Correlation between Calories and Level of active activity
-<img scr = "https://imgur.com/RRRb9ZM.png">
+<img src = "https://imgur.com/RRRb9ZM.png">
 
 ## 4.6 User Type Distribution
-<img scr = "https://imgur.com/yFGIb5Z.png">
+<img src= "https://imgur.com/yFGIb5Z.png">
 
 #### Findings
 
