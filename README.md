@@ -89,7 +89,7 @@ ENCLOSED BY ""
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS; 
 
-/*hourlysteps_merged*/
+/*Hourlysteps_merged*/
 CREATE TABLE hourlySteps_merged (
 Id VARCHAR(50), ActivityHour VARHCAR(50), StepTotal INT); 
 
@@ -118,7 +118,7 @@ IGNORE 1 ROWS;
 The date format in cvs file can't be read by mysql, so after importing csv file to database, the dateformat must be converted from varchar(50) to dateformat. 
 
 ``` sql 
-- Converting Data Type-
+-- Converting Data Type --
 Add a new column and insert the converted old column value into new column.  
 
 Alter table bellabeat.dailyactivity
@@ -140,12 +140,12 @@ SET Activity_Date = cast(str_to_date(ActivityDate,"%m/%d/%Y")as date);
 
 ```sql 
 Alter table bellabeat.hourlysteps_merged
-add Activity_Hour VARCHAR(50) ;
+ADD Activity_Hour VARCHAR(50) ;
 UPDATE bellabeat.hourlysteps_merged
 SET Activity_Hour = cast(str_to_date(ActivityHour,"%m/%e/%Y %r")as datetime); 
 
 Alter table bellabeat.sleepday_merged
-add SleepDatetime VARCHAR(50) ;
+ADD SleepDatetime VARCHAR(50) ;
 UPDATE bellabeat.sleepday_merged
 SET SleepDatetime = cast(str_to_date(SleepDay,"%m/%e/%Y %r")as datetime); 
 ```
