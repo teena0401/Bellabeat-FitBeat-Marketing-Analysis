@@ -1,15 +1,15 @@
-# Bellabeat
-<img src = "https://imgur.com/undefined.png" height = "300" width = "1000">
-## Introduction 
+<img src = "https://imgur.com/zUgkfjk.png" height = "250" width = "900">
 
-This case study is the final project in the Google Data Analytics Professional Certificate course. In the case study, I’ll be analyzing a public dataset provided by the course as if I were working with the Marketing and Product departments as a data analyst at the health and wellness company Bellabeat.
+## Introduction 
+This case study is part of the Google Data Analytics Professional Certificate Course. I am required to put on the thinking cap of a junior data analyst and provide insight as if I were working with the Marketing and Product departments at the health and wellness company Bellabeat.  
 
 ## About Bellabeat 
-Bellabeat is a wellness company based in San Francisco, California that develops smart technology for women. Their mission is to empower women by providing them with the data to discover themselves.
+Bellabeat is a wellness company based in San Francisco, California that develops smart technology for women. Their mission is to empower women by providing them with the data to discover themselves. 
+
 Bellabeat products are available through a growing number of online retailers in addition to their own e-commerce channel on their website.
 
 ## Method Approach
-In this project, I will use 6 steps to ensure its completion: 
+I section this project into 6 parts: 
 1. Ask 
 2. Prepare 
 3. Process 
@@ -20,7 +20,6 @@ In this project, I will use 6 steps to ensure its completion:
 ## Phase 1: Ask 
 ##### **1.1 Business Task:** 
 Identify some trends in how consumers use the Bellabeat devices and how these trends can help improve new opportunities growth for Bellabeat as well as marketing strategy.
-Analyze smart device user data to gain insight into how consumers are using their non-Bellabeat smart devices (in this case, FitBit), and apply these insights to comparable Bellabeat products such as the Bellabeat Leaf.
 
 ##### 1.2 Key Stakeholders
 Urška Sršen – Bellabeat’s cofounder and Chief Creative Officer
@@ -49,7 +48,7 @@ Participants weren’t asked to wear/use their FitBits for the entirety of the 3
 ## Phase 3: Process
 To begin processing the data, I used SQL in BigQuery as one of the data analytics tools, to import the dataset, do the process of cleaning and organizing. The cleaning process included adjusting data type formats, removing duplicates and null data. I extracted the clean data to new csv and stored it. I documented the whole process of cleaning.
 
-<img src="https://imgur.com/a/rJmoft9.png">
+<img src="https://imgur.com/ASFLrLz.png">
 
 ##### 3.1 Importing Datasets
 
