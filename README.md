@@ -260,10 +260,10 @@ WHERE Id is null;
 After cleaning the data, 3-clean dataset will be used to do the analysis process. In this process, I organized and formatted the data, performed some calculations, and identified trends as well as relationships between each variable.
 
 ## 4.1 Overview of User Activity Class 
-<img scr="https://imgur.com/lO4ZLZD.png">
+<img src="https://imgur.com/lO4ZLZD.png">
 
 ## 4.2 Daily Activity Behavior of a Smart Device User 
-<img scr="https://imgur.com/wZJ3Bsb.png">
+<img src="https://imgur.com/wZJ3Bsb.png">
 
 ## 4.3 Day of Week Activity Behavior of Smart Device Users 
 <img src="https://imgur.com/HOJsZOH.png"> 
