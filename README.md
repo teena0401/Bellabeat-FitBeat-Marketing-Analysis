@@ -226,37 +226,56 @@ Having num_of_ids >1;
 ``` 
 
 ## 3.5.2 Find Unsuitable Data 
+```sql 
+-- check if total steps - 0 in daily activity table-- 
+SELECT Id, count(*) as num_of_zero_steps
+FROM bellabeat.dailyactivity_merged
+WHERE TotalSteps
+group by Id
+order by num_of_zero_steps;
+
+-- create new daily activity table -- 
+CREATE TABLE bellabeat.dailyactivty_new 
+AS SELECT * FROM bellabea.dailyacitivty_merged
+WHERE TotalSteps != 0 ; 
+```
+
+## 3.3.3 Find Null Data
+```sql 
+-- check for null data -- 
+SELECT* FROM bellabeat.dailyactivity_merged 
+WHERE Id is null; 
+-- 0 datapoint are null -- 
+
+SELECT* FROM bellabeat.hourlysteps
+WHERE Id is null; 
+-- No datapoint are null -- 
+
+SELECT* FROM bellabeat.sleepday
+WHERE Id is null; 
+-- No datapoint are null-- 
+```
 
 ## Phase 4: Analyze
 After cleaning the data, 3-clean dataset will be used to do the analysis process. In this process, I organized and formatted the data, performed some calculations, and identified trends as well as relationships between each variable.
 
 ## 4.1 Overview of User Activity Class 
+<img scr ="https://imgur.com/lO4ZLZD.png">
+
 ## 4.2 Daily Activity Behavior of a Smart Device User 
+<img scr ="https://imgur.com/wZJ3Bsb.png">
+
 ## 4.3 Day of Week Activity Behavior of Smart Device Users 
+<img scr = "https://imgur.com/HOJsZOH.png"> 
+
 ## 4.4 Number of Sleep Night being tracked in a month
-## 4.5 User Type Distribution
+<img scr = "https://imgur.com/t99ZzuO.png"> 
 
-### Data Visualization 
+## 4.5 Correlation between Calories and Level of active activity
+<img scr = "https://imgur.com/RRRb9ZM.png">
 
-Sleep [Average Hours of Sleep per day of week ]  
-2. Total Minutes of Sleep Vs Sendentary Minutes x4 
-3. Total Minutes of Sleep vc Total Sleep 
-4. How many minutes on average it takes to fall asleep by day of week 
-5. How many minutes to fall asleep 
-
-Calories 
-1. average calories burned per day of the week 
-2. Calories burned vs Sedentary Minutes (x4) 
-3. Calories Burned vs Step taken 
-4. calories burned vs total distance (x4) 
-
-Activity 
-1. Average Steps taken per day of the week 
-2. Average Distance(in Kilometer) per day of the week 
-3. Percentage of Time Spent in different levels of activity across entire study 
-
-
-
+## 4.6 User Type Distribution
+<img scr = "https://imgur.com/yFGIb5Z.png">
 
 #### Findings
 
