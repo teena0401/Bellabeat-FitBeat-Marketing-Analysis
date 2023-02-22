@@ -168,7 +168,7 @@ and A.TotalSteps = S.StepTotal;
 After running the inner join query, we can see it return 940 rows, which is same as other dataset. 
 <img src="https://imgur.com/uhrA0Bc.png">
 
-## 3.4 Checking Start-End Date and Length of Id
+#### 3.4 Checking Start-End Date and Length of Id
 ```sql
 -- Find the start and end date of each activity-- 
 SELECT MIN(Activity_Date) as start_date, MAX(Activity_Date) as end_date
@@ -221,7 +221,7 @@ Having num_of_ids >1;
 -- There are 3 duplicate rows returned
 ``` 
 
-## 3.5.2 Find Unsuitable Data 
+#### 3.5.2 Find Unsuitable Data 
 ```sql 
 -- check if total steps - 0 in daily activity table-- 
 SELECT Id, count(*) as num_of_zero_steps
@@ -295,5 +295,3 @@ Based on the findings, I recommend adding notification system to the products, p
 
 3. **__Marketing Campaign__ pinpointing the perks of having Health Assitant and targeting white-collar worker.** 
 Based on our findings, we observed the users in our study, on average spend 12 hours on sedentary activity and they are most active in evening and afternoon. Plus, 90% users wear more than 21 days in a month. This group of people tend to lose track of time due to their job nature and less-physical consuming activity, so the marketing content could cater and tailor for them. 
-
-
