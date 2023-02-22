@@ -277,8 +277,8 @@ I organized and formatted the data, performed some calculations, and identified 
 ##### 4.6 User Type Distribution
 <img src= "https://imgur.com/yFGIb5Z.png" height="450" width="600">
 
-## Findings
-
+## 5.Share   
+#### Findings
 -	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month.
 -	90% users wear for more than 21 days in a month. 
 -	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
@@ -286,9 +286,8 @@ I organized and formatted the data, performed some calculations, and identified 
 -	Users are less likely to wear during sleep, where only 10 users, out of 24 users, have worn more than 15 nights. 
 -	There is a positive correlation between activity level and calories burned. The more activity you are, the more calories you burn   
 
-
-### Recommendations 
-
+## 6.Act  
+#### Recommendations 
 The insufficient data has resulted less credibility in our finding. 
 Based on the findings, I recommend adding notification system to the products, promoting point-award incentive system and marketing campaign for white-collar group. 
 
