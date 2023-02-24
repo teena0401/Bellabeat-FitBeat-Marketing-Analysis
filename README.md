@@ -248,29 +248,28 @@ WHERE Id is null;
 
 ## Phase 4: Analyze
 
-After cleaning and adding new columns to the cleaned datasets, it exported datasets and imported to Tableau for the data visualization process. In this process, 
-I organized and formatted the data, performed some calculations, and identified trends as well as relationships between each variable.
+Once turning datasets into usable format, I export it into a ```csv.file``` and then import into Tableau software to visualise data. The ```following diagrams``` are the trends that I've identified during data visualization process.
 
-## 4.1 Overview of User Activity Class 
+### 4.1 Overview of ```User Activity``` Class   
 <img src="https://imgur.com/lO4ZLZD.png" height="450" width="600">
 
-##### 4.2 Daily Activity Behavior of a Smart Device User 
+### 4.2 ```Daily Activity Behavior``` of a Smart Device User     
 <img src="https://imgur.com/wZJ3Bsb.png" height="450" width="600">
 
-##### 4.3 Day of Week Activity Behavior of Smart Device Users 
+### 4.3 ```Day of Week Activity Behavior``` of Smart Device Users     
 <img src="https://imgur.com/HOJsZOH.png" height="450" width="600"> 
 
-##### 4.4 Number of Sleep Night being tracked in a month
+### 4.4 Number of ```Sleep Night``` being tracked in a month      
 <img src = "https://imgur.com/t99ZzuO.png" height="450" width="600"> 
 
-##### 4.5 Correlation between Calories and Level of active activity
+### 4.5 Correlation between ```calories and Level of active activity```     
 <img src = "https://imgur.com/RRRb9ZM.png" height="450" width="600">
 
-##### 4.6 User Type Distribution
+### 4.6 ```User Type Distribution ```    
 <img src= "https://imgur.com/yFGIb5Z.png" height="450" width="600">
 
-## 5.Share   
-#### Findings
+## 5. Share   
+### ```Findings```
 -	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month.
 -	90% users wear for more than 21 days in a month. 
 -	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
@@ -278,14 +277,15 @@ I organized and formatted the data, performed some calculations, and identified 
 -	Users are less likely to wear during sleep, where only 10 users, out of 24 users, have worn more than 15 nights. 
 -	There is a positive correlation between activity level and calories burned. The more activity you are, the more calories you burn   
 
-## 6.Act  
-#### Recommendations 
+## 6. Act   
+### ```Recommendations```     
+
 The insufficient data has resulted less credibility in our finding. 
 Based on the findings, I recommend adding notification system to the products, promoting point-award incentive system and marketing campaign for white-collar group. 
 
-1. **Add Notification System to products/apps.** For users who have not reached the daily minimum step count or been on sedentary activities continually, products/apps will notify either through reminder notification or vibration from smart products. 
+1. ```Add Notification System to products/apps ``` For users who have not reached the daily minimum step count or been on sedentary activities continually, products/apps will notify either through reminder notification or vibration from smart products. 
 
-2. **Promote point-award incentive system.** Based on our analysis, we found that 90% users wear fitbit regularly. Users who completing bellabeat exercise weekly challenge can redeem points on products/memberships. Those points can use on exchanging/discount on bellabeat new products. 
+2. ``` Promote point-award incentive system ``` Based on our analysis, we found that 90% users wear fitbit regularly. Users who completing bellabeat exercise weekly challenge can redeem points on products/memberships. Those points can use on exchanging/discount on bellabeat new products. 
 
-3. **__Marketing Campaign__ pinpointing the perks of having Health Assitant and targeting white-collar worker.** 
+3. ``` Marketing Campaign__ pinpointing the perks of having Health Assitant and targeting white-collar worker```    
 Based on our findings, we observed the users in our study, on average spend 12 hours on sedentary activity and they are most active in evening and afternoon. Plus, 90% users wear more than 21 days in a month. This group of people tend to lose track of time due to their job nature and less-physical consuming activity, so the marketing content could cater and tailor for them. 
