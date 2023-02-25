@@ -248,7 +248,7 @@ WHERE Id is null;
 
 ## Phase 4: Analyze
 
-Once turning datasets into usable format, I export it into a ```csv.file``` and then import into Tableau software to visualise data. The ```following diagrams``` are the trends that I've identified during data visualization process.
+Once turning datasets into usable format, I export it into a ```csv.file``` and then import into Tableau software to visualise data. The ***following diagrams*** are the trends that I've identified during data visualization process.
 
 ### 4.1 Overview of ```User Activity``` Class   
 <img src="https://imgur.com/lO4ZLZD.png" height="450" width="600">
