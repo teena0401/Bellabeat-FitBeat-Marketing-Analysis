@@ -270,12 +270,12 @@ Once turning datasets into usable format, I export it into a ```csv.file``` and 
 
 ## 5. Share   
 ### ```Findings```
--	User experience of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month.
--	90% users wear for more than 21 days in a month. 
--	On average, each user spends half their day on sedentary activities and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
--	Evening period, 5pm to 7pm, has the highest average steps count throughout a day followed by afternoon to noon period, 12pm to 2pm, which has the second highest count. 
--	Users are less likely to wear during sleep, where only 10 users, out of 24 users, have worn more than 15 nights. 
--	There is a positive correlation between activity level and calories burned. The more activity you are, the more calories you burn   
+-	***User experience*** of bellabeat product is positive as 90% of existing users wear for more than 21 days in a month.
+-	90% users ***wear for more than 21 days in a month.*** 
+-	On average, ***each user spends half their day on sedentary activities*** and less than 2 hours altogether on very active and fairly active activities (1 hour 12 mins).
+-	***Evening period, 5pm to 7pm, has the highest average steps count throughout a day*** followed by afternoon to noon period, 12pm to 2pm, which has the second highest count. 
+-	***Users are less likely to wear during sleep***, where only 10 users, out of 24 users, have worn more than 15 nights. 
+-	There is a ***positive correlation between activity level and calories burned.*** The more activity you are, the more calories you burn   
 
 ## 6. Act   
 ### ```Recommendations```     
